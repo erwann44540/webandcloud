@@ -49,7 +49,8 @@ var DiceView={
 				value: DiceGame.name,
 				class: 'input is-rounded',
 				 oninput: function (e) {
-					 DiceGame.name=e.target.value},
+					 DiceGame.name=e.target.value;
+					 Score.myLoadList(e.target.value)},
 				 }),
 			m('div',{class:'level'},[
 			 m('label',{class:'level-item'},"turn:"+DiceGame.turn),
